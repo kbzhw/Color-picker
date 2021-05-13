@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颜色选择器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none
+        }
+        .colorPicker {
+            width: 260px;
+            height: 310px;
+            background-color: #f1f1f1;
+            margin: 100px auto;
+        }
+        .colorPicker .header {
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 2px solid #999;
+            padding-left: 10px;
+        }
+        .colorPicker .header h4 {
+            color: #666;
+        }
+        .colorPicker .footer .footer-hd {
+            text-align: center;
+            width: 260px;
+            height: 30px;
+            
+        }
+        .footer .footer-bd ul {
+            
+            margin-left: 5px;
+        }
+        .footer .footer-bd li {
+            float: left;
+            width: 15px;
+            height: 15px;
+            background-color: rgb(225,225,255);
+            margin: 6px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="colorPicker">
+        <div class="header">
+            <h4>A</h4>
+        </div>
+        <div class="footer">
+            <div class="footer-hd">无颜色</div>
+            <div class="footer-bd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var arr = ['rgb(255, 255, 255)','rgb(230, 230, 230)','rgb(204, 204, 204)','rgb(179, 179, 179)','rgb(153, 153, 153)','rgb(128, 128, 128)','rgb(102, 102, 102)','rgb(77, 77, 77)','rgb(0, 0, 0)','rgb(255, 255, 229)','rgb(255, 255, 179)','rgb(255, 255, 128)','rgb(255, 255, 77)','rgb(255, 255, 26)','rgb(255, 255, 0)','rgb(229, 230, 0)','rgb(178, 179, 0)','rgb(127, 128, 0)','rgb(255, 235, 204)','rgb(255, 214, 153)','rgb(255, 194, 102)','rgb(255, 173, 51)','rgb(255, 153, 0)','rgb(204, 122, 0)','rgb(179, 107, 0)','rgb(153, 92, 0)','rgb(128, 77, 0)','rgb(255, 214, 204)','rgb(255, 173, 153)','rgb(255, 153, 128)','rgb(255, 133, 102)','rgb(255, 92, 51)','rgb(255, 51, 0)','rgb(204, 41, 0)','rgb(179, 36, 0)','rgb(153, 31, 0)','rgb(255, 229, 240)','rgb(255, 179, 209)','rgb(255, 153, 194)','rgb(255, 102, 163)','rgb(255, 51, 133)','rgb(255, 0, 102)','rgb(204, 0, 82)','rgb(179, 0, 71)','rgb(153, 0, 61)','rgb(255, 229, 255)','rgb(255, 179, 255)','rgb(255, 153, 255)','rgb(255, 102, 255)','rgb(255, 51, 255)','	rgb(255, 0, 255)','rgb(230, 0, 229)','rgb(204, 0, 204)','rgb(179, 0, 178)','rgb(204, 204, 255)','rgb(179, 179, 255)','rgb(153, 153, 255)','rgb(102, 102, 255)','rgb(51, 51, 255)','rgb(0, 0, 255)','rgb(0, 0, 204)','rgb(0, 0, 179)','rgb(0, 0, 153)','rgb(229, 250, 255)','rgb(204, 245, 255)','rgb(153, 235, 255)','rgb(102, 224, 255)','rgb(51, 214, 255)','rgb(0, 204, 255)','rgb(0, 184, 230)','rgb(0, 163, 204)','rgb(0, 122, 153)','rgb(249, 255, 229)','rgb(236, 255, 179)','rgb(230, 255, 153)','rgb(217, 255, 102)','rgb(204, 255, 51)','rgb(191, 255, 0)','rgb(172, 230, 0)','rgb(153, 204, 0)','rgb(134, 179, 0)','	rgb(115, 153, 0)',''];
+        var lis = document.querySelectorAll('li');
+        for(var i=0;i<arr.length;i++){
+            lis[i].style.backgroundColor = arr[i];
+        }
+    </script>
+</body>
+</html>
